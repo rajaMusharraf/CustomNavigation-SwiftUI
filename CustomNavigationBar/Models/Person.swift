@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Person : Hashable, Codable {
+    var name: String
+    var address: String
+}

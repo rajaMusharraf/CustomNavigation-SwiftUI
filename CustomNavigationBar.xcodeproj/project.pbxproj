@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		4F492BBC2CA27DDE003C2583 /* CustomNavigationBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BBB2CA27DDE003C2583 /* CustomNavigationBarApp.swift */; };
-		4F492BBE2CA27DDE003C2583 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BBD2CA27DDE003C2583 /* ContentView.swift */; };
 		4F492BC02CA27DE1003C2583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F492BBF2CA27DE1003C2583 /* Assets.xcassets */; };
 		4F492BC32CA27DE1003C2583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F492BC22CA27DE1003C2583 /* Preview Assets.xcassets */; };
+		4F492BD02CA27DEB003C2583 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BCA2CA27DEB003C2583 /* CustomNavBarContainerView.swift */; };
+		4F492BD12CA27DEB003C2583 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BCB2CA27DEB003C2583 /* CustomNavView.swift */; };
+		4F492BD22CA27DEB003C2583 /* AppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BCC2CA27DEB003C2583 /* AppNavBarView.swift */; };
+		4F492BD32CA27DEB003C2583 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BCD2CA27DEB003C2583 /* CustomNavLink.swift */; };
+		4F492BD42CA27DEB003C2583 /* CustomAppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BCE2CA27DEB003C2583 /* CustomAppNavBarView.swift */; };
+		4F492BD52CA27DEB003C2583 /* CustomNavBarPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BCF2CA27DEB003C2583 /* CustomNavBarPreferenceKeys.swift */; };
+		4F492BD82CA27E29003C2583 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BD72CA27E29003C2583 /* PersonDetailView.swift */; };
+		4F492BDB2CA27E53003C2583 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F492BDA2CA27E53003C2583 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F492BB82CA27DDE003C2583 /* CustomNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F492BBB2CA27DDE003C2583 /* CustomNavigationBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarApp.swift; sourceTree = "<group>"; };
-		4F492BBD2CA27DDE003C2583 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F492BBF2CA27DE1003C2583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F492BC22CA27DE1003C2583 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F492BCA2CA27DEB003C2583 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
+		4F492BCB2CA27DEB003C2583 /* CustomNavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		4F492BCC2CA27DEB003C2583 /* AppNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavBarView.swift; sourceTree = "<group>"; };
+		4F492BCD2CA27DEB003C2583 /* CustomNavLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		4F492BCE2CA27DEB003C2583 /* CustomAppNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAppNavBarView.swift; sourceTree = "<group>"; };
+		4F492BCF2CA27DEB003C2583 /* CustomNavBarPreferenceKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferenceKeys.swift; sourceTree = "<group>"; };
+		4F492BD72CA27E29003C2583 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		4F492BDA2CA27E53003C2583 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		4F492BBA2CA27DDE003C2583 /* CustomNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				4F492BC92CA27DEB003C2583 /* App Nav Bar */,
+				4F492BD92CA27E46003C2583 /* Models */,
+				4F492BD72CA27E29003C2583 /* PersonDetailView.swift */,
 				4F492BBB2CA27DDE003C2583 /* CustomNavigationBarApp.swift */,
-				4F492BBD2CA27DDE003C2583 /* ContentView.swift */,
 				4F492BBF2CA27DE1003C2583 /* Assets.xcassets */,
 				4F492BC12CA27DE1003C2583 /* Preview Content */,
 			);
@@ -65,6 +81,27 @@
 				4F492BC22CA27DE1003C2583 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F492BC92CA27DEB003C2583 /* App Nav Bar */ = {
+			isa = PBXGroup;
+			children = (
+				4F492BCA2CA27DEB003C2583 /* CustomNavBarContainerView.swift */,
+				4F492BCB2CA27DEB003C2583 /* CustomNavView.swift */,
+				4F492BCC2CA27DEB003C2583 /* AppNavBarView.swift */,
+				4F492BCD2CA27DEB003C2583 /* CustomNavLink.swift */,
+				4F492BCE2CA27DEB003C2583 /* CustomAppNavBarView.swift */,
+				4F492BCF2CA27DEB003C2583 /* CustomNavBarPreferenceKeys.swift */,
+			);
+			path = "App Nav Bar";
+			sourceTree = "<group>";
+		};
+		4F492BD92CA27E46003C2583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F492BDA2CA27E53003C2583 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F492BBE2CA27DDE003C2583 /* ContentView.swift in Sources */,
+				4F492BD22CA27DEB003C2583 /* AppNavBarView.swift in Sources */,
+				4F492BD12CA27DEB003C2583 /* CustomNavView.swift in Sources */,
+				4F492BD42CA27DEB003C2583 /* CustomAppNavBarView.swift in Sources */,
 				4F492BBC2CA27DDE003C2583 /* CustomNavigationBarApp.swift in Sources */,
+				4F492BD32CA27DEB003C2583 /* CustomNavLink.swift in Sources */,
+				4F492BD52CA27DEB003C2583 /* CustomNavBarPreferenceKeys.swift in Sources */,
+				4F492BDB2CA27E53003C2583 /* Person.swift in Sources */,
+				4F492BD82CA27E29003C2583 /* PersonDetailView.swift in Sources */,
+				4F492BD02CA27DEB003C2583 /* CustomNavBarContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

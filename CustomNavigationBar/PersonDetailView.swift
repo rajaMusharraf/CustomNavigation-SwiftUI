@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct PersonDetailView: View {
+    var person : Person
+    @Environment(\.dismiss) var dismissView
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(spacing: 15) {
+            Text("Name: \(person.name)")
+            Text("Adress: \(person.address)")
+            CustomNavLink(
+                destination:
+                    Text("Destination")
+            ) {
+                Text("Naviagte To Next Screen")
+                    .padding(10)
+                    .foregroundColor(.white)
+                    .background(RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.red))
+            }
+            Button {
+                dismissView()
+            } label: {
+                Text("Go Back")
+                    .padding(10)
+                    .foregroundColor(.white)
+            }.background(RoundedRectangle(cornerRadius: 12)
+                .fill(Color.red))
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .customNavBarItems(model: NavBarModel(isBackButton: true,
+                                              title: "Details",
+                                              subTitle: "Person Details",
+                                              backgroundColor: .mint))
+        Spacer()
+        Spacer()
     }
+    
 }
 
 #Preview {
-    PersonDetailView()
+    PersonDetailView(person: Person(name: "John", address: "Pakistan"))
 }

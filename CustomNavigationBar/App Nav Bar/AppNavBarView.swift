@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct AppNavBarView: View {
-    @State var getDataBack: String = ""
     var body: some View {
         CustomNavView {
             CustomNavLink(
                 destination:
-                    PersonDetailVie(person: Person(name: "Test", address: "User Address"), getDataBack: $getDataBack)
-//                    Text("Destination")
-//                    .customNavBarItems(model: NavBarModel(isBackButton: true,
-//                                                          title: "Second Screen",
-//                                                          subTitle: "Second Screen SubTitle",
-//                                                          backgroundColor: .yellow))
+                    PersonDetailView(person: Person(name: "Musharraf", address: "Islamabad"))
             ) {
                 Text("Naviagte")
             }
@@ -28,23 +22,6 @@ struct AppNavBarView: View {
                                                   backgroundColor: .red))
         }
         
-    }
-    
-    private var defaultNavBar: some View {
-        NavigationStack {
-            ZStack {
-                Color.green.ignoresSafeArea()
-                
-                NavigationLink {
-                    Text("Destination")
-                        .navigationTitle("Destination Title")
-                } label: {
-                    Text("Naviagte")
-                }
-                
-            }
-            .navigationTitle("Nav title here")
-        }
     }
 }
 
