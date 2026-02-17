@@ -14,11 +14,11 @@ struct AppNavBarView: View {
                 destination:
                     PersonDetailView(person: Person(name: "Musharraf", address: "Islamabad"))
             ) {
-                Text("Naviagte")
+                Text("Naviagte to second screen")
             }
             .customNavBarItems(model: NavBarModel(isBackButton: false,
-                                                  title: "First Screen",
-                                                  subTitle: "First Screen",
+                                                  title: "First Screen Title",
+                                                  subTitle: "First Screen Description",
                                                   backgroundColor: .red))
         }
         

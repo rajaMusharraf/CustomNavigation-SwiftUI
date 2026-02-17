@@ -18,9 +18,9 @@ struct PersonDetailView: View {
             Text("Adress: \(person.address)")
             CustomNavLink(
                 destination:
-                    Text("Destination")
+                    Text("Third Screen")
             ) {
-                Text("Naviagte To Next Screen")
+                Text("Naviagte to third screen")
                     .padding(10)
                     .foregroundColor(.white)
                     .background(RoundedRectangle(cornerRadius: 12)
@@ -47,5 +47,5 @@ struct PersonDetailView: View {
 }
 
 #Preview {
-    PersonDetailView(person: Person(name: "John", address: "Pakistan"))
+    PersonDetailView(person: Person(name: "Musharaf", address: "Pakistan"))
 }
