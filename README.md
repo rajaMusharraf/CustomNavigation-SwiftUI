@@ -2,4 +2,4 @@
 
 Here’s a quick demo of the app:
 
-![App Demo](./assets/demo.gif)
+<img src="./Assets/demo.gif" alt="App Demo" width="400" height="300">
