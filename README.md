@@ -2,4 +2,4 @@
 
 Here’s a quick demo of the app:
 
-<img src="./Assets/demo.gif" alt="App Demo" width="400" height="300">
+<img src="/assets/demo.gif" alt="App Demo" width="400" height="300">
